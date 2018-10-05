@@ -1,0 +1,7 @@
+*.slx -crlf -diff -merge
+*.mdl -crlf -diff -merge
+*.mat -crlf -diff -merge
+*.dtp -crlf -diff -merge
+*.dlm -crlf -diff -merge
+*.png -crlf -diff -merge
+*.jar -crlf -diff -merge
