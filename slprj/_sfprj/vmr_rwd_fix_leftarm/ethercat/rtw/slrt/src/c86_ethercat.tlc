@@ -1,0 +1,80 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   9 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "secondaryPosData_data"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      Dimensions   [400]\
+    }\
+    ChartData {\
+      Name         "secondaryPosData_sizes"\
+      Description  "SizeInfo"\
+      SFName       ""\
+      Path         ""\
+      Dimensions   [2]\
+    }\
+    ChartData {\
+      Name         "secondaryPosData_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "secondaryVelData_data"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      Dimensions   [400]\
+    }\
+    ChartData {\
+      Name         "secondaryVelData_sizes"\
+      Description  "SizeInfo"\
+      SFName       ""\
+      Path         ""\
+      Dimensions   [2]\
+    }\
+    ChartData {\
+      Name         "primaryVelData_data"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      Dimensions   [400]\
+    }\
+    ChartData {\
+      Name         "primaryVelData_sizes"\
+      Description  "SizeInfo"\
+      SFName       ""\
+      Path         ""\
+      Dimensions   [2]\
+    }\
+    ChartData {\
+      Name         "primaryVelDataFiltered_data"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      Dimensions   [400]\
+    }\
+    ChartData {\
+      Name         "primaryVelDataFiltered_sizes"\
+      Description  "SizeInfo"\
+      SFName       ""\
+      Path         ""\
+      Dimensions   [2]\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

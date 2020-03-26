@@ -1,0 +1,17 @@
+#include "vmr_rwd_fix_leftarm.bio"
+#include "vmr_rwd_fix_leftarm.lbl"
+#include "vmr_rwd_fix_leftarm.sid"
+
+
+const xpc_SigMappingInfo xpcMMI[] =
+  {
+    {
+      {vmr_rwd_fix_leftarm_BIO},
+      {vmr_rwd_fix_leftarm_SID},
+      {vmr_rwd_fix_leftarm_LBL},
+      "",
+      "vmr_rwd_fix_leftarm",
+      0,
+      84814,
+    },
+  };

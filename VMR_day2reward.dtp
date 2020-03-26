@@ -43,7 +43,7 @@
 		u''
 	</instructions_en>
 	<last_modified>
-		'2018-10-02  04:37 PM'
+		'2018-11-21  12:18 PM'
 	</last_modified>
 	<loadtable>
 		[[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 
@@ -59,7 +59,7 @@
 		[]
 	</loadtable_defs>
 	<name>
-		u'VMR_day2reward'
+		'VMR_day2reward'
 	</name>
 	<pause_behaviour>
 		0
@@ -114,21 +114,21 @@
 		[['X', 'float'], ['Y', 'float'], ['Visual radius', 'float'], ['Logical radius', 'float'], ['Color', 'colour'], ['Hit Color', 'colour'], ['Label text', 'label'], ['Label Height', 'float'], ['Stroke Width', 'float'], ['Stroke Color', 'colour'], ['Rotated Color', 'colour']]
 	</targettable_defs>
 	<tasklevelparams>
-		[['K_LEFTHAND_TGT', '22'], 
-		['K_FIX_LEFTHAND', '0'], 
-		['K_INSTRUCT_TIME', '3000'], 
-		['K_ROBOT_RAMP_TIME', '1000'], 
-		['K_SCORE_TIME', '3000'], 
-		['K_TONE_NEUTRAL_FREQUENCY', '900'], 
-		['K_SCORETEXT_ROW', '20'], 
-		['K_TONE_HIT_DURATION', '100'], 
-		['K_ROBOT_MOVE_TIME', '3000'], 
+		[['K_RETURN_RING_ROW', '21'], 
 		['K_TONE_NEUTRAL_DURATION', '100'], 
-		['K_RETURN_RING_ROW', '21'], 
-		['K_REWARD_VAL', '10'], 
+		['K_REWARD_VAL', '5'], 
+		['K_LEFTHAND_TGT', '22'], 
+		['K_FIX_LEFTHAND', '0'], 
+		['K_TONE_HIT_DURATION', '100'], 
+		['K_ROBOT_RAMP_TIME', '1000'], 
+		['K_INSTRUCT_TIME', '3000'], 
+		['K_TONE_HIT_FREQUENCY', '12000'], 
 		['K_UNUSED', '0'], 
 		['K_VIS_RAD', '0.02'], 
-		['K_TONE_HIT_FREQUENCY', '12000']]
+		['K_ROBOT_MOVE_TIME', '3000'], 
+		['K_TONE_NEUTRAL_FREQUENCY', '900'], 
+		['K_SCORETEXT_ROW', '20'], 
+		['K_SCORE_TIME', '3000']]
 	</tasklevelparams>
 	<tasklevelparams_defs>
 		[['K_SCORETEXT_ROW', 'integer'], ['K_REWARD_VAL', 'integer'], ['K_UNUSED', 'integer'], ['K_TONE_HIT_DURATION', 'integer'], ['K_TONE_HIT_FREQUENCY', 'integer'], ['K_VIS_RAD', 'float'], ['K_RETURN_RING_ROW', 'integer'], ['K_SCORE_TIME', 'integer'], ['K_INSTRUCT_TIME', 'integer'], ['K_TONE_NEUTRAL_DURATION', 'integer'], ['K_TONE_NEUTRAL_FREQUENCY', 'integer'], ['K_LEFTHAND_TGT', 'integer'], ['K_FIX_LEFTHAND', 'integer'], ['K_ROBOT_RAMP_TIME', 'integer'], ['K_ROBOT_MOVE_TIME', 'integer']]

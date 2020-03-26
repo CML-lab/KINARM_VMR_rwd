@@ -1,0 +1,72 @@
+%implements "machineHeader" "C"
+%function CacheOutputs(block,system) void
+%openfile typedefsBuf   
+            
+%closefile typedefsBuf
+%<SLibCacheCodeToFile("sf_machine_typedef",typedefsBuf)>
+%openfile definesBuf   
+   #define col_x (1.0)         
+   #define col_y (2.0)         
+   #define E_TARGET_ON (3.0)         
+   #define LOGICAL_RADIUS (4.0)         
+   #define START_TARGET_COL (1.0)         
+   #define END_TARGET_COL (2.0)         
+   #define ROTATION_CENTER (3.0)         
+   #define MAXREACHTIME_COL (5.0)         
+   #define ROTATION_TYPE (7.0)         
+   #define ROTATION (8.0)         
+   #define DELAY_POSTTRIAL_COL (6.0)         
+   #define E_STAY_CENTER (2.0)         
+   #define VISUAL_RADIUS (3.0)         
+   #define COLOR (5.0)         
+   #define K_SCORETEXT_ROW (1.0)         
+   #define LABEL_HEIGHT (8.0)         
+   #define HITCOLOR (6.0)         
+   #define E_HIT_TARGET (5.0)         
+   #define E_MISS_TARGET (9.0)         
+   #define K_REWARD_VAL (2.0)         
+   #define K_TONE_HIT_DURATION (4.0)         
+   #define K_TONE_HIT_FREQUENCY (5.0)         
+   #define K_VIS_RAD (6.0)         
+   #define E_REWARD (6.0)         
+   #define WAIT_AT_START_COL (4.0)         
+   #define LABEL (7.0)         
+   #define K_RETURN_RING_ROW (7.0)         
+   #define STROKE_WIDTH (9.0)         
+   #define STROKE_COLOR (10.0)         
+   #define K_SCORE_TIME (8.0)         
+   #define HAND_VIS_COL (9.0)         
+   #define CLAMP_COL (10.0)         
+   #define DO_REWARD_COL (11.0)         
+   #define K_TONE_NEUTRAL_DURATION (10.0)         
+   #define K_TONE_NEUTRAL_FREQUENCY (11.0)         
+   #define E_NEUTRAL_FDBK (10.0)         
+   #define E_SHOW_SCORE (17.0)         
+   #define DISPLAY_TRIAL_COL (12.0)         
+   #define K_INSTRUCT_TIME (9.0)         
+   #define E_SHOW_INSTRUCT (18.0)         
+   #define INSTRUCT_PAUSE_BTN (2.0)         
+   #define K_LEFTHAND_TGT (12.0)         
+   #define K_ROBOT_RAMP_TIME (14.0)         
+   #define K_ROBOT_MOVE_TIME (15.0)         
+   #define K_FIX_LEFTHAND (13.0)         
+   #define E_NO_EVENT (0.0)         
+   #define K_UNUSED (3.0)         
+   #define ROTATED_COLOR (11.0)         
+%closefile definesBuf
+%<SLibCacheCodeToFile("sf_machine_data_define",definesBuf)>
+%openfile externDataBuf
+%closefile externDataBuf
+%<SLibCacheCodeToFile("sf_machine_extern_data_decl",externDataBuf)>
+%openfile externDataBuf
+%closefile externDataBuf
+%<SLibCacheCodeToFile("sf_machine_public_extern_data_decl",externDataBuf)>
+%openfile externDataBuf
+
+            
+            
+%closefile externDataBuf
+%<SLibCacheCodeToFile("sf_machine_extern_fcn_decl",externDataBuf)>
+%endfunction %% CacheOutputs
+ 
+

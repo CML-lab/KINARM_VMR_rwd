@@ -1,0 +1,60 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   7 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "isStable"\
+      Description  "IsstableBool"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "is_active_c47_ethercat"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "is_c47_ethercat"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "setupIdx"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "setupIdx"\
+    }\
+    ChartData {\
+      Name         "donePolling"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "donePolling"\
+    }\
+    ChartData {\
+      Name         "encoderIdx"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "encoderIdx"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

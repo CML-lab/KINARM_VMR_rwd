@@ -1,0 +1,116 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   16 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "e_exit_trialEventCounter"\
+      Description  "OutputEventCounter"\
+      SFName       ""\
+      Path         "e_exit_trial"\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "isStable"\
+      Description  "IsstableBool"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "is_active_c42_General"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "is_c42_General"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "is_InTrial"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "InTrial"\
+    }\
+    ChartData {\
+      Name         "trial_queue"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "trial_queue"\
+      Dimensions   [499]\
+    }\
+    ChartData {\
+      Name         "repeat_list"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "repeat_list"\
+      Dimensions   [499]\
+    }\
+    ChartData {\
+      Name         "repeat_list_length"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "repeat_list_length"\
+    }\
+    ChartData {\
+      Name         "i"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "i"\
+    }\
+    ChartData {\
+      Name         "swap_index"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "swap_index"\
+    }\
+    ChartData {\
+      Name         "temp"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "temp"\
+    }\
+    ChartData {\
+      Name         "trial_queue_length"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "trial_queue_length"\
+    }\
+    ChartData {\
+      Name         "trial_in_mini_block"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "trial_in_mini_block"\
+    }\
+    ChartData {\
+      Name         "EXAM"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "EXAM"\
+    }\
+    ChartData {\
+      Name         "BLOCK"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "BLOCK"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

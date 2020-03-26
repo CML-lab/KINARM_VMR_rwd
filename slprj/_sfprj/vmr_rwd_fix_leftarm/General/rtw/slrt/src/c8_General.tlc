@@ -1,0 +1,145 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   21 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "isStable"\
+      Description  "IsstableBool"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "is_active_c8_General"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "is_UpdatePacketQueue"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "UpdatePacketQueue"\
+    }\
+    ChartData {\
+      Name         "is_active_UpdatePacketQueue"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "UpdatePacketQueue"\
+    }\
+    ChartData {\
+      Name         "is_SendControlMachine"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "SendControlMachine"\
+    }\
+    ChartData {\
+      Name         "is_active_SendControlMachine"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "SendControlMachine"\
+    }\
+    ChartData {\
+      Name         "is_Fixed"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "SendControlMachine.Fixed"\
+    }\
+    ChartData {\
+      Name         "is_FixMonitor"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "FixMonitor"\
+    }\
+    ChartData {\
+      Name         "is_active_FixMonitor"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "FixMonitor"\
+    }\
+    ChartData {\
+      Name         "queue_tail"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "queue_tail"\
+    }\
+    ChartData {\
+      Name         "packet_index"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "packet_index"\
+    }\
+    ChartData {\
+      Name         "packet_queue"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "packet_queue"\
+      Dimensions   [410,50000]\
+    }\
+    ChartData {\
+      Name         "packet_queue_sz"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "packet_queue_sz"\
+    }\
+    ChartData {\
+      Name         "i"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "i"\
+    }\
+    ChartData {\
+      Name         "j"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "j"\
+    }\
+    ChartData {\
+      Name         "outstanding_packet_index"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "outstanding_packet_index"\
+    }\
+    ChartData {\
+      Name         "queue_head"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "queue_head"\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i1"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i2"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i3"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

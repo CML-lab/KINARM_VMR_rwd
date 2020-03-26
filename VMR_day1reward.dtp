@@ -59,7 +59,7 @@
 		u''
 	</instructions_en>
 	<last_modified>
-		'2018-10-01  10:14 AM'
+		'2018-11-20  12:34 PM'
 	</last_modified>
 	<loadtable>
 		[[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 
@@ -132,7 +132,7 @@
 	<tasklevelparams>
 		[['K_RETURN_RING_ROW', '21'], 
 		['K_TONE_NEUTRAL_DURATION', '100'], 
-		['K_REWARD_VAL', '10'], 
+		['K_REWARD_VAL', '5'], 
 		['K_LEFTHAND_TGT', '22'], 
 		['K_FIX_LEFTHAND', '0'], 
 		['K_TONE_HIT_DURATION', '100'], 

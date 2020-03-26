@@ -1,0 +1,14 @@
+#include "vmr_rwd_fix_leftarm.pt"
+
+
+const xpc_ParamMappingInfo  xpcparamsMMI[] =
+  {
+    {
+      {vmr_rwd_fix_leftarm_PT},
+      "vmr_rwd_fix_leftarm",
+      "",
+      "vmr_rwd_fix_leftarm",
+      0,
+      769,
+    },
+  };

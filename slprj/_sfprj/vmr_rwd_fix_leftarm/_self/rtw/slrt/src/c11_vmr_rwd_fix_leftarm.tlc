@@ -1,0 +1,123 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   17 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "reset_controllerEventCounter"\
+      Description  "OutputEventCounter"\
+      SFName       ""\
+      Path         "reset_controller"\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "isStable"\
+      Description  "IsstableBool"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "is_active_c11_vmr_rwd_fix_leftarm"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "is_c11_vmr_rwd_fix_leftarm"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "is_EnableState"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "EnableState"\
+    }\
+    ChartData {\
+      Name         "is_AutoMoveToPos"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "EnableState.AutoMoveToPos"\
+    }\
+    ChartData {\
+      Name         "tickCount"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "tickCount"\
+    }\
+    ChartData {\
+      Name         "StartPos"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "StartPos"\
+      Dimensions   [2]\
+    }\
+    ChartData {\
+      Name         "TgtPos"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "TgtPos"\
+      Dimensions   [2]\
+    }\
+    ChartData {\
+      Name         "updatepos"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "updatepos"\
+    }\
+    ChartData {\
+      Name         "CurHandPos"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "CurHandPos"\
+      Dimensions   [2]\
+    }\
+    ChartData {\
+      Name         "ramp_time"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "ramp_time"\
+    }\
+    ChartData {\
+      Name         "scale_increment"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "scale_increment"\
+    }\
+    ChartData {\
+      Name         "tick"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "tick"\
+    }\
+    ChartData {\
+      Name         "trajectory_shape"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "trajectory_shape"\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i1"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
